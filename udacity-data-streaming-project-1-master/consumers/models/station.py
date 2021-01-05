@@ -18,6 +18,10 @@ class Station:
         self.dir_b = None
         self.num_turnstile_entries = 0
 
+
+    # @classmethod : tells a class that it's a method which should be inherited into subclasses
+    # difference btw classmethod vs staticmethod
+    # https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner
     @classmethod
     def from_message(cls, value):
         """Given a Kafka Station message, creates and returns a station"""
